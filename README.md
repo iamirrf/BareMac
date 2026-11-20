@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="website/assets/icon.svg" width="128" height="128" alt="BareMac icon">
+  <img src="website/assets/icon.png" width="128" height="128" alt="BareMac icon">
 </p>
 
 <h1 align="center">BareMac</h1>
@@ -41,6 +41,20 @@ Each promise is enforced in code and proven by tests — see [How BareMac stays 
 | **Startup Items** | Background items in plain words, with on/off for your own via `launchctl`. |
 | **Space Map** | A treemap of your biggest folders, so you see where space goes. |
 | **History** | Every action BareMac took, with Put Back. |
+
+## Screenshots
+
+<p align="center">
+  <img src="website/assets/screens/systemJunk.png" width="880" alt="System Junk: caches, logs and damaged settings, each measured with its exact path">
+</p>
+
+<p align="center">
+  <img src="website/assets/screens/spaceMap.png" width="880" alt="Space Map: a treemap of the biggest folders on the disk">
+</p>
+
+<p align="center">
+  <img src="website/assets/screens/uninstaller.png" width="880" alt="Uninstaller: an app together with every file it made, ready to move to the Trash">
+</p>
 
 ## Install
 
