@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>BareMac</string>
+	<key>CFBundleExecutable</key>
+	<string>BareMac</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.baremac.BareMac</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>BareMac</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2026 The BareMac Authors. MIT License.</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSDesktopFolderUsageDescription</key>
+	<string>BareMac measures files on your Desktop to find large and duplicate files. It reads names, sizes and dates, and nothing ever leaves your Mac.</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>BareMac measures files in Documents to find large and duplicate files. It reads names, sizes and dates, and nothing ever leaves your Mac.</string>
+	<key>NSDownloadsFolderUsageDescription</key>
+	<string>BareMac measures files in Downloads to find large and duplicate files. It reads names, sizes and dates, and nothing ever leaves your Mac.</string>
+	<key>NSRemovableVolumesUsageDescription</key>
+	<string>BareMac measures folders you choose on removable drives for the Space Map. Nothing ever leaves your Mac.</string>
+	<key>NSNetworkVolumesUsageDescription</key>
+	<string>BareMac measures folders you choose on network drives for the Space Map. Nothing is sent anywhere.</string>
+</dict>
+</plist>

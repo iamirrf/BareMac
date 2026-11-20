@@ -1,0 +1,47 @@
+# XcodeGen spec for the release build. SwiftPM (Package.swift) is the main build;
+# this project exists so `xcodebuild archive` + `-exportArchive` can sign with a
+# Developer ID certificate and notarize through the Xcode account.
+#
+#   cd Xcode && xcodegen generate
+#   Scripts/release-xcode.sh
+name: BareMac
+options:
+  bundleIdPrefix: com.baremac
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+packages:
+  BareMacPackage:
+    path: ..
+targets:
+  BareMac:
+    type: application
+    platform: macOS
+    sources:
+      - path: ../Sources/BareMac
+      - path: ../Resources/Assets.xcassets
+        optional: true
+      - path: ../Resources/AppIcon.icon
+        optional: true
+        buildPhase: resources
+    dependencies:
+      - package: BareMacPackage
+        product: BareMacCore
+    settings:
+      base:
+        PRODUCT_NAME: BareMac
+        PRODUCT_BUNDLE_IDENTIFIER: com.baremac.BareMac
+        INFOPLIST_FILE: ../Resources/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+        SWIFT_VERSION: "6.0"
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: DU9D6TAM58
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        COMBINE_HIDPI_IMAGES: YES
+        DEAD_CODE_STRIPPING: YES
+        ARCHS: "$(ARCHS_STANDARD)"
+        ONLY_ACTIVE_ARCH: NO
